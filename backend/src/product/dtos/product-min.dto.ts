@@ -1,4 +1,4 @@
-import { Expose } from 'class-transformer';
+import { Expose, Transform } from 'class-transformer';
 
 export class ProductMinDto {
   @Expose()
@@ -14,6 +14,7 @@ export class ProductMinDto {
   descount: number;
 
   @Expose()
+  @Transform(({ value }) => (Array.isArray(value) ? value[0] : value))
   image: string;
 
   @Expose()
