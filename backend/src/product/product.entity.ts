@@ -9,10 +9,19 @@ export class Product {
   name: string;
 
   @Column()
+  alias: string;
+
+  @Column()
   price: number;
 
   @Column()
   review: number;
+
+  @Column({ nullable: true })
+  customreviews: number;
+
+  @Column()
+  smalldescription: string;
 
   @Column('text', { array: true, nullable: true })
   size: string[] | null;
@@ -39,7 +48,7 @@ export class Product {
   description: string;
 
   @Column()
-  plusInfo: string;
+  info: string;
 
   @Column('text', { array: true, nullable: true })
   image: string[] | null;
