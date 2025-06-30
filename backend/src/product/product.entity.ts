@@ -39,7 +39,7 @@ export class Product {
   description: string;
 
   @Column()
-  plusInfo: string;
+  info: string;
 
   @Column('text', { array: true, nullable: true })
   image: string[] | null;
