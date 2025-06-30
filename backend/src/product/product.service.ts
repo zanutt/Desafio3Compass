@@ -14,20 +14,41 @@ export class ProductService {
     return this.repo.findOneBy({ id });
   }
 
-  findAllByCategory(cat: string, count: number) {
+  findAllByCategory(cat: string, page: number = 1, count: number = 16) {
+    const skip = (page - 1) * count;
+
     return this.repo
       .createQueryBuilder('product')
       .where(
         'LOWER(:cat) = ANY(SELECT LOWER(c) FROM unnest(product.category) AS c)',
         { cat },
       )
-      .take(count || 16)
-      .getMany();
+      .skip(skip)
+      .take(count)
+      .getManyAndCount()
+      .then(([products, total]) => {
+        console.log('products:', products, 'total:', total);
+        return {
+          products,
+          total,
+          totalPages: Math.ceil(total / count),
+          current: page,
+        };
+      });
   }
 
-  findAll(count: number) {
-    return this.repo.find({
-      take: count,
-    });
+  findAllPaginated(page: number, count: number) {
+    const skip = (page - 1) * count;
+    return this.repo
+      .createQueryBuilder('product')
+      .skip(skip)
+      .take(count)
+      .getManyAndCount()
+      .then(([products, total]) => ({
+        products,
+        total,
+        totalPages: Math.ceil(total / count),
+        currentPage: page,
+      }));
   }
 }

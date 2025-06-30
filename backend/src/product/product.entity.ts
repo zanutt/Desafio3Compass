@@ -17,6 +17,9 @@ export class Product {
   @Column()
   review: number;
 
+  @Column({ nullable: true })
+  customreviews: number;
+
   @Column()
   smalldescription: string;
 
