@@ -7,6 +7,13 @@ import { Repository } from 'typeorm';
 export class ProductService {
   constructor(@InjectRepository(Product) private repo: Repository<Product>) {}
 
+  findOne(id: number) {
+    if (!id) {
+      return null;
+    }
+    return this.repo.findOneBy({ id });
+  }
+
   findAllByCategory(cat: string, count: number) {
     return this.repo
       .createQueryBuilder('product')

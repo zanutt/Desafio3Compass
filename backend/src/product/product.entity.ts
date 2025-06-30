@@ -9,10 +9,16 @@ export class Product {
   name: string;
 
   @Column()
+  alias: string;
+
+  @Column()
   price: number;
 
   @Column()
   review: number;
+
+  @Column()
+  smalldescription: string;
 
   @Column('text', { array: true, nullable: true })
   size: string[] | null;
