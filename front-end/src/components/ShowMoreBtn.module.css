@@ -1,0 +1,17 @@
+.showMoreBtn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.showMoreBtn a {
+  padding: 1em;
+  border: 1px solid #b88e2f;
+  background: #fff;
+  color: #b88e2f;
+  font-size: 16px;
+  font-style: normal;
+  max-width: fit-content;
+}

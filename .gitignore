@@ -1,8 +1,14 @@
 # compiled output
 /dist
-backend/node_modules/
-backend/dist/
+/node_modules
 /build
+backend\node_modules
+backend\dist
+front-end/node_modules
+front-end\node_modules
+front-end\dist
+front-end/dist
+\node_modules
 
 # Logs
 logs

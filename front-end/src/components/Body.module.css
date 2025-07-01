@@ -1,0 +1,19 @@
+.bodyitems {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.range {
+  padding: 106px 0 77px;
+  color: #333;
+  font-size: 32px;
+  font-weight: 1200;
+}
+
+.prod {
+  padding: 56px 0 32px;
+  color: #333;
+  font-size: 32px;
+  font-weight: 1200;
+}
