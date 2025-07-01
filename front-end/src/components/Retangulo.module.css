@@ -1,0 +1,17 @@
+.textBox {
+  position: absolute;
+  top: 61.5%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  min-width: 643px;
+  max-width: 80%;
+  min-height: 300px;
+  border-radius: 10px;
+  background: #fff3e3;
+  color: #222;
+  padding: 24px 32px;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 2;
+  padding: 85px 56px 0 41px;
+}

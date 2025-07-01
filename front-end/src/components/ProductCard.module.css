@@ -1,0 +1,51 @@
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 2px 8px #eee;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.body {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.alias {
+  color: #888;
+  font-size: 0.95rem;
+}
+.price {
+  font-size: 1.1rem;
+  color: #222;
+}
+.discount {
+  color: #e53935;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.badgeNew {
+  background: #4caf50;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  align-self: flex-start;
+}
