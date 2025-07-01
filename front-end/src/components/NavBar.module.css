@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3em 1em 0;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+}
+
+.mid_menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.right_menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
