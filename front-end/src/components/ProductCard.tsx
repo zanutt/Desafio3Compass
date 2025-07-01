@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ProductCard.module.css";
 import type { Product } from "../types/Product";
+import { Link } from "react-router-dom";
 
 interface Props {
   product: Product;
@@ -14,6 +15,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
     : product.price.toFixed(2);
 
   return (
+    <Link to={`/product/${product.alias}`} className={styles.link}>
     <div className={styles.card}>
       <div className={styles.badgeWrapper}>
         {hasDiscount && (
@@ -37,6 +39,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
         </span>
       </div>
     </div>
+    </Link>
   );
 };
 
