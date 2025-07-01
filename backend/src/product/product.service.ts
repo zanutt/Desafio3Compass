@@ -14,7 +14,7 @@ export class ProductService {
     return this.repo.findOneBy({ id });
   }
 
-  findAllByCategory(cat: string, page: number = 1, count: number = 16) {
+  findAllByCategory(cat: string, page: number, count: number) {
     const skip = (page - 1) * count;
 
     return this.repo
