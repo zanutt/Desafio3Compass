@@ -4,19 +4,25 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background: url("/assets/banner.png") lightgray 50% / cover no-repeat;
+  min-height: 525px;
 }
 
-.image {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  user-select: none;
-}
-.selectionRect {
+.textBox {
   position: absolute;
-  border: 2px dashed #1976d2;
-  background: rgba(25, 118, 210, 0.08);
-  pointer-events: none;
+  top: 71.5%;
+  left: 74.5%;
+  transform: translate(-50%, -50%);
+  min-width: 643px;
+  max-width: 80%;
+  min-height: 300px;
+  border-radius: 10px;
+  background: #fff3e3;
+  color: #222;
+  padding: 24px 32px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  padding: 85px 56px 0 41px;
+  text-align: left;
 }
