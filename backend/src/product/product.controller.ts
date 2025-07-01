@@ -38,10 +38,10 @@ export class ProductController {
     return this.productService.findAllByCategory(cat, pageNum, countNum);
   }
 
-  @Get('/:id')
+  @Get('/:alias')
   @Serialize(ProductDto)
-  async findProduct(@Param('id') id: string) {
-    const product = await this.productService.findOne(parseInt(id));
+  async findProduct(@Param('alias') alias: string) {
+    const product = await this.productService.findOne(alias);
     if (!product) {
       throw new NotFoundException('Product not found');
     }

@@ -7,11 +7,11 @@ import { Repository } from 'typeorm';
 export class ProductService {
   constructor(@InjectRepository(Product) private repo: Repository<Product>) {}
 
-  findOne(id: number) {
-    if (!id) {
+  findOne(alias: string) {
+    if (!alias) {
       return null;
     }
-    return this.repo.findOneBy({ id });
+    return this.repo.findOneBy({ alias });
   }
 
   findAllByCategory(cat: string, page: number, count: number) {
