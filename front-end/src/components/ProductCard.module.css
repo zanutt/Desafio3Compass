@@ -8,15 +8,52 @@
   display: flex;
   flex-direction: column;
   transition: transform 0.2s;
+  position: relative;
 }
+
 .card:hover {
   transform: translateY(-4px) scale(1.03);
 }
+
+.badgeWrapper {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.badgeDiscount,
+.badgeNew {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 2px 6px #0002;
+  margin-bottom: 4px;
+}
+
+.badgeDiscount {
+  background: #e53935;
+}
+
+.badgeNew {
+  background: #4caf50;
+}
+
 .image {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
+
 .body {
   padding: 16px;
   flex: 1;
@@ -24,28 +61,31 @@
   flex-direction: column;
   gap: 8px;
 }
+
 .name {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .alias {
   color: #888;
   font-size: 0.95rem;
 }
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .price {
   font-size: 1.1rem;
   color: #222;
-}
-.discount {
-  color: #e53935;
   font-weight: bold;
-  margin-left: 8px;
 }
-.badgeNew {
-  background: #4caf50;
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.85em;
-  align-self: flex-start;
+
+.priceOriginal {
+  font-size: 1rem;
+  color: #888;
+  text-decoration: line-through;
 }
