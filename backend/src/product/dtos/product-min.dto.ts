@@ -2,7 +2,13 @@ import { Expose, Transform } from 'class-transformer';
 
 export class ProductMinDto {
   @Expose()
+  id: number;
+
+  @Expose()
   name: string;
+
+  @Expose()
+  category: string[];
 
   @Expose()
   alias: string;
