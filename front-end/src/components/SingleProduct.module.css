@@ -185,3 +185,133 @@ h1 {
   border: 2px solid #1a8917 !important;
   background: #eafbe7;
 }
+
+.actionsRow {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.addToCart,
+.compare {
+  border: 1px solid #222;
+  background: #fff;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.divider {
+  margin: 2rem 0 1rem 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.actionsRow {
+  display: flex;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.quantityBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bbb;
+  border-radius: 12px;
+  padding: 0 16px;
+  height: 48px;
+  min-width: 120px;
+  background: #fff;
+  font-size: 18px;
+  gap: 16px;
+}
+
+.quantityBox button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #888;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.quantityBox button:hover {
+  background: #f5f5f5;
+}
+
+.quantityBox span {
+  min-width: 24px;
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+}
+
+.actionBtn {
+  border: 1px solid #222;
+  background: #fff;
+  color: #222;
+  border-radius: 12px;
+  padding: 0 32px;
+  height: 48px;
+  font-size: 18px;
+  margin-left: 0;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionBtn:hover {
+  background: #f5f5f5;
+  color: #000;
+}
+
+.share {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.proddetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.detailLabel {
+  min-width: 100px;
+  color: #9f9f9f;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.detailValue {
+  color: #888;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.detailLabel::after {
+  content: " :";
+  margin-right: 8px;
+}
