@@ -27,7 +27,6 @@ export class ProductService {
       .take(count)
       .getManyAndCount()
       .then(([products, total]) => {
-        console.log('products:', products, 'total:', total);
         return {
           products,
           total,
@@ -43,6 +42,7 @@ export class ProductService {
       .createQueryBuilder('product')
       .skip(skip)
       .take(count)
+      .orderBy('RANDOM()')
       .getManyAndCount()
       .then(([products, total]) => ({
         products,
