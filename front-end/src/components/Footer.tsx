@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <div className={styles.footer}>
         <div className={styles.logotxt}>
           <h3>Furniro.</h3>
