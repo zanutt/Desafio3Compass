@@ -1,7 +1,6 @@
 .singleproduct {
   display: flex;
   flex-direction: column;
-  gap: 48px;
   margin: 40px auto 0 auto;
   padding: 0 24px;
 }
@@ -125,7 +124,7 @@ h1 {
   line-height: normal;
 }
 
-.description {
+.smalldescription {
   max-width: 424px;
   color: #000;
   font-size: 13px;
@@ -314,4 +313,47 @@ h1 {
 .detailLabel::after {
   content: " :";
   margin-right: 8px;
+}
+
+.tabs {
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tabHeaders {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabHeaders button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+  color: #9f9f9f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activeTab {
+  color: #000 !important;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tabContent {
+  padding: 43px 202px 89px 212px;
+  min-height: 60px;
+  color: #9f9f9f;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
 }

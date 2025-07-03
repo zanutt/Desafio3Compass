@@ -4,7 +4,7 @@ export interface Product {
   alias: string;
   price: number;
   descount: number;
-  image: string[]; // array para todos os casos
+  image: string[];
   new: boolean;
   review?: number;
   customreviews?: number;
