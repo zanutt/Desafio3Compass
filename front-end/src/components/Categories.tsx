@@ -1,22 +1,22 @@
 import React from "react";
-
+import { Link } from "react-router-dom"; // Use Link do react-router-dom
 import styles from "./Categories.module.css";
 
 const Categories = () => {
   return (
     <div className={styles.cats}>
-      <a href="">
+      <Link to="/shop?filter=dining">
         <img src="/assets/dining.png" alt="Dining" />
         Dining
-      </a>
-      <a href="">
+      </Link>
+      <Link to="/shop?filter=living">
         <img src="/assets/living.png" alt="Living" />
         Living
-      </a>
-      <a href="">
+      </Link>
+      <Link to="/shop?filter=bedroom">
         <img src="/assets/bedroom.png" alt="Bedroom" />
         Bedroom
-      </a>
+      </Link>
     </div>
   );
 };
