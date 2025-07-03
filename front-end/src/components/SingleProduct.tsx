@@ -112,190 +112,191 @@ const SingleProduct: React.FC = () => {
   };
 
   return (
-    <div className={styles.singleproduct}>
+    <>
       <RouteBar productname={product.name} />
-
-      <div className={styles.prodtop}>
-        <div className={styles.images}>
-          {/* galeria dos produtos */}
-          <div className={styles.gallery}>
-            <img
-              src={product.image?.[selectedImg] || ""}
-              alt={product.name}
-              className={styles.mainImg}
-            />
-            <div className={styles.thumbs}>
-              {(product.image || []).map((img: string, i: number) => (
-                <img
-                  key={i}
-                  src={img}
-                  alt={product.name}
-                  className={`${styles.thumb} ${selectedImg === i ? styles.active : ""}`}
-                  onClick={() => setSelectedImg(i)}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.info}>
-          <h1>{product.name}</h1>
-          <div className={styles.priceRow}>
-            <span className={styles.price}>$ {discountedPrice}</span>
-            {hasDiscount && (
-              <span className={styles.priceOriginal}>
-                $ {product.price.toFixed(2)}
-              </span>
-            )}
-          </div>
-
-          {/* necessita refino */}
-          <div className={styles.reviews}>
-            <span>
-              ⭐ {product.review} | ({product.customreviews ?? 0} reviews)
-            </span>
-          </div>
-
-          <div className={styles.smalldescription}>
-            {product.smalldescription}
-          </div>
-
-          <div className={styles.optionsRow}>
-            <div className={styles.optionLabel}>Size:</div>
-            <div className={styles.sizes}>
-              {sizes.map((sz, i) => {
-                const value = sz
-                  ? sizeMap[sz] || sz[0].toUpperCase()
-                  : "Unique";
-                const isSelected = selectedSize === (sz || "Unique");
-                return (
-                  <span
+      <div className={styles.singleproduct}>
+        <div className={styles.prodtop}>
+          <div className={styles.images}>
+            {/* galeria dos produtos */}
+            <div className={styles.gallery}>
+              <img
+                src={product.image?.[selectedImg] || ""}
+                alt={product.name}
+                className={styles.mainImg}
+              />
+              <div className={styles.thumbs}>
+                {(product.image || []).map((img: string, i: number) => (
+                  <img
                     key={i}
-                    className={`${styles.sizeTag} ${isSelected ? styles.selected : ""}`}
-                    onClick={() => setSelectedSize(sz || "Unique")}
-                    style={{ cursor: "pointer" }}
-                  >
-                    {value}
-                  </span>
-                );
-              })}
-            </div>
-          </div>
-
-          <div className={styles.optionsRow}>
-            <div className={styles.optionLabel}>Color:</div>
-            <div className={styles.colors}>
-              {colors.map((col, i) => {
-                const isSelected = selectedColor === (col || "Unique");
-                return col ? (
-                  <span
-                    key={i}
-                    className={`${styles.colorDot} ${isSelected ? styles.selected : ""}`}
-                    title={col}
-                    style={{
-                      background: colorMap[col] || "#ccc",
-                      cursor: "pointer",
-                    }}
-                    onClick={() => setSelectedColor(col)}
+                    src={img}
+                    alt={product.name}
+                    className={`${styles.thumb} ${selectedImg === i ? styles.active : ""}`}
+                    onClick={() => setSelectedImg(i)}
                   />
-                ) : (
-                  <span
-                    key={i}
-                    className={`${styles.sizeTag} ${isSelected ? styles.selected : ""}`}
-                    onClick={() => setSelectedColor("Unique")}
-                    style={{ cursor: "pointer" }}
-                  >
-                    Unique
-                  </span>
-                );
-              })}
-            </div>
-            <div className={styles.actionsRow}>
-              <div className={styles.quantityBox}>
-                <a
-                  href="javascript:void(0)"
-                  onClick={() => handleQuantityChange(-1)}
-                >
-                  -
-                </a>
-                <span>{quantity}</span>
-                <a
-                  href="javascript:void(0)"
-                  onClick={() => handleQuantityChange(1)}
-                >
-                  +
-                </a>
+                ))}
               </div>
-              <button className={styles.actionBtn}>Add To Cart</button>
-              <button className={styles.actionBtn}>+ Compare</button>
             </div>
-            <hr className={styles.divider} />
+          </div>
 
-            <div className={styles.productDetails}>
-              <div className={styles.proddetail}>
-                <span className={styles.detailLabel}>SKU</span>
-                <span className={styles.detailValue}>
-                  {product.sku || "N/A"}
+          <div className={styles.info}>
+            <h1>{product.name}</h1>
+            <div className={styles.priceRow}>
+              <span className={styles.price}>$ {discountedPrice}</span>
+              {hasDiscount && (
+                <span className={styles.priceOriginal}>
+                  $ {product.price.toFixed(2)}
                 </span>
+              )}
+            </div>
+
+            {/* necessita refino */}
+            <div className={styles.reviews}>
+              <span>
+                ⭐ {product.review} | ({product.customreviews ?? 0} reviews)
+              </span>
+            </div>
+
+            <div className={styles.smalldescription}>
+              {product.smalldescription}
+            </div>
+
+            <div className={styles.optionsRow}>
+              <div className={styles.optionLabel}>Size:</div>
+              <div className={styles.sizes}>
+                {sizes.map((sz, i) => {
+                  const value = sz
+                    ? sizeMap[sz] || sz[0].toUpperCase()
+                    : "Unique";
+                  const isSelected = selectedSize === (sz || "Unique");
+                  return (
+                    <span
+                      key={i}
+                      className={`${styles.sizeTag} ${isSelected ? styles.selected : ""}`}
+                      onClick={() => setSelectedSize(sz || "Unique")}
+                      style={{ cursor: "pointer" }}
+                    >
+                      {value}
+                    </span>
+                  );
+                })}
               </div>
-              <div className={styles.proddetail}>
-                <span className={styles.detailLabel}>Category</span>
-                <span className={styles.detailValue}>
-                  {product.category?.join(", ") || "N/A"}
-                </span>
+            </div>
+
+            <div className={styles.optionsRow}>
+              <div className={styles.optionLabel}>Color:</div>
+              <div className={styles.colors}>
+                {colors.map((col, i) => {
+                  const isSelected = selectedColor === (col || "Unique");
+                  return col ? (
+                    <span
+                      key={i}
+                      className={`${styles.colorDot} ${isSelected ? styles.selected : ""}`}
+                      title={col}
+                      style={{
+                        background: colorMap[col] || "#ccc",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => setSelectedColor(col)}
+                    />
+                  ) : (
+                    <span
+                      key={i}
+                      className={`${styles.sizeTag} ${isSelected ? styles.selected : ""}`}
+                      onClick={() => setSelectedColor("Unique")}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Unique
+                    </span>
+                  );
+                })}
               </div>
-              <div className={styles.proddetail}>
-                <span className={styles.detailLabel}>Tags</span>
-                <span className={styles.detailValue}>
-                  {product.tags?.join(", ") || "N/A"}
-                </span>
+              <div className={styles.actionsRow}>
+                <div className={styles.quantityBox}>
+                  <a
+                    href="javascript:void(0)"
+                    onClick={() => handleQuantityChange(-1)}
+                  >
+                    -
+                  </a>
+                  <span>{quantity}</span>
+                  <a
+                    href="javascript:void(0)"
+                    onClick={() => handleQuantityChange(1)}
+                  >
+                    +
+                  </a>
+                </div>
+                <button className={styles.actionBtn}>Add To Cart</button>
+                <button className={styles.actionBtn}>+ Compare</button>
               </div>
-              <div className={styles.proddetail}>
-                <span className={styles.detailLabel}>Share</span>
-                <span className={styles.detailValue}>
-                  <a href="/" rel="noopener noreferrer">
-                    <FbSvg />
-                  </a>
-                  <a href="/" target="_blank" rel="noopener noreferrer">
-                    <LinkedinSvg />
-                  </a>
-                  <a href="/" target="_blank" rel="noopener noreferrer">
-                    <XSvg />
-                  </a>
-                </span>
+              <hr className={styles.divider} />
+
+              <div className={styles.productDetails}>
+                <div className={styles.proddetail}>
+                  <span className={styles.detailLabel}>SKU</span>
+                  <span className={styles.detailValue}>
+                    {product.sku || "N/A"}
+                  </span>
+                </div>
+                <div className={styles.proddetail}>
+                  <span className={styles.detailLabel}>Category</span>
+                  <span className={styles.detailValue}>
+                    {product.category?.join(", ") || "N/A"}
+                  </span>
+                </div>
+                <div className={styles.proddetail}>
+                  <span className={styles.detailLabel}>Tags</span>
+                  <span className={styles.detailValue}>
+                    {product.tags?.join(", ") || "N/A"}
+                  </span>
+                </div>
+                <div className={styles.proddetail}>
+                  <span className={styles.detailLabel}>Share</span>
+                  <span className={styles.detailValue}>
+                    <a href="/" rel="noopener noreferrer">
+                      <FbSvg />
+                    </a>
+                    <a href="/" target="_blank" rel="noopener noreferrer">
+                      <LinkedinSvg />
+                    </a>
+                    <a href="/" target="_blank" rel="noopener noreferrer">
+                      <XSvg />
+                    </a>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <hr className={styles.divider} />
-      {/* tabs de description full e info adcional */}
-      <div className={styles.tabs}>
-        <div className={styles.tabHeaders}>
-          <button
-            className={activeTab === "description" ? styles.activeTab : ""}
-            onClick={() => setActiveTab("description")}
-          >
-            Description
-          </button>
-          <button
-            className={activeTab === "info" ? styles.activeTab : ""}
-            onClick={() => setActiveTab("info")}
-          >
-            Additional Information
-          </button>
+        <hr className={styles.divider} />
+        {/* tabs de description full e info adcional */}
+        <div className={styles.tabs}>
+          <div className={styles.tabHeaders}>
+            <button
+              className={activeTab === "description" ? styles.activeTab : ""}
+              onClick={() => setActiveTab("description")}
+            >
+              Description
+            </button>
+            <button
+              className={activeTab === "info" ? styles.activeTab : ""}
+              onClick={() => setActiveTab("info")}
+            >
+              Additional Information
+            </button>
+          </div>
+          <div className={styles.tabContent}>
+            {activeTab === "description" && <div>{product.description}</div>}
+            {activeTab === "info" && <div>{product.info}</div>}
+          </div>
         </div>
-        <div className={styles.tabContent}>
-          {activeTab === "description" && <div>{product.description}</div>}
-          {activeTab === "info" && <div>{product.info}</div>}
-        </div>
-      </div>
 
-      <div className={styles.related}>
-        <h2>Related Products</h2>
-        <ProductList products={related} />
+        <div className={styles.related}>
+          <h2>Related Products</h2>
+          <ProductList products={related} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
