@@ -1,6 +1,7 @@
 .badgecollection {
   display: flex;
   background: #faf3ea;
+  margin-top: 15px;
 }
 
 .badges {
