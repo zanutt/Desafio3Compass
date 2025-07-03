@@ -9,9 +9,9 @@ interface Props {
 const RouteBar: React.FC<Props> = ({ productname }) => {
   return (
     <div className={styles.routebar}>
-      <p>Home</p>
+      <a href="/">Home</a>
       <p className={styles.darktext}>&gt;</p>
-      <p>Shop</p>
+      <a href="/shop">Shop</a>
       <p className={styles.darktext}>&gt;</p>
       <p>|</p>
       <p className={styles.darktext}>{productname}</p>
