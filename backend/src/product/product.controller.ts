@@ -18,12 +18,19 @@ export class ProductController {
   @Get('/all')
   @Serialize(PaginatedProductsDto)
   async findAllProducts(
-    @Query('count') count: string,
     @Query('page') page: string,
+    @Query('perPage') perPage: string,
+    @Query('sort') sort: string,
+    @Query('filter') filter: string,
   ) {
-    const countNum = parseInt(count) || 8;
+    const perPageNum = parseInt(perPage) || 8;
     const pageNum = parseInt(page) || 1;
-    return this.productService.findAllPaginated(pageNum, countNum);
+    return this.productService.findAllPaginated(
+      pageNum,
+      perPageNum,
+      sort,
+      filter,
+    );
   }
 
   @Get('/category/:category')
@@ -38,10 +45,10 @@ export class ProductController {
     return this.productService.findAllByCategory(cat, pageNum, countNum);
   }
 
-  @Get('/:id')
+  @Get('/:alias')
   @Serialize(ProductDto)
-  async findProduct(@Param('id') id: string) {
-    const product = await this.productService.findOne(parseInt(id));
+  async findProduct(@Param('alias') alias: string) {
+    const product = await this.productService.findOne(alias);
     if (!product) {
       throw new NotFoundException('Product not found');
     }

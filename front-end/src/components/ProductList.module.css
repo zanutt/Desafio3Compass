@@ -4,16 +4,5 @@
   gap: 24px;
   justify-items: center;
   margin-top: 24px;
-}
-
-@media (max-width: 900px) {
-  .productList {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .productList {
-    grid-template-columns: 1fr;
-  }
+  padding: 10px 105px 0 99px;
 }

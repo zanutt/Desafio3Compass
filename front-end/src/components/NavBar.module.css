@@ -2,16 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 3em 1em 0;
+  padding: 34px 100px 35px 54px;
   background-color: #fff;
-  font-family: "Montserrat";
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1em;
+}
+
+.logo h1 {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: "Montserrat";
 }
 
 .mid_menu {

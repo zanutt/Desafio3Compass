@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ProductCard.module.css";
 import type { Product } from "../types/Product";
+import { Link } from "react-router-dom";
+import ShareSvg from "./ShareSvg";
+import CompareSvg from "./CompareSvg";
+import LikeSvg from "./LikeSvg";
 
 interface Props {
   product: Product;
 }
 
 const ProductCard: React.FC<Props> = ({ product }) => {
-  // func para calcular o desocnto se houver
   const hasDiscount = product.descount > 0;
   const discountedPrice = hasDiscount
     ? (product.price * (1 - product.descount / 100)).toFixed(2)
@@ -28,13 +31,30 @@ const ProductCard: React.FC<Props> = ({ product }) => {
         <span className={styles.name}>{product.name}</span>
         <span className={styles.alias}>{product.alias}</span>
         <span className={styles.priceRow}>
-          <span className={styles.price}>R$ {discountedPrice}</span>
+          <span className={styles.price}>$ {discountedPrice}</span>
           {hasDiscount && (
             <span className={styles.priceOriginal}>
-              R$ {product.price.toFixed(2)}
+              $ {product.price.toFixed(2)}
             </span>
           )}
         </span>
+      </div>
+      {/* hover redirect */}
+      <div className={styles.overlay}>
+        <Link to={`/product/${product.alias}`} className={styles.seeDetailsBtn}>
+          See Details
+        </Link>
+        <div className={styles.overlayoptions}>
+          <p>
+            <ShareSvg /> Share
+          </p>
+          <p>
+            <CompareSvg /> Compare
+          </p>
+          <p>
+            <LikeSvg /> Like
+          </p>
+        </div>
       </div>
     </div>
   );

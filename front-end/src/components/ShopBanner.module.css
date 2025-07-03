@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/assets/shopbanner.png") lightgray 50% / cover no-repeat;
+}
+
+.textBox {
+  padding: 121px 658px 97px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBox h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sublinks {
+  display: flex;
+  gap: 6px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.shop {
+  font-weight: 300;
+}

@@ -1,0 +1,112 @@
+.filterBar {
+  display: flex;
+  padding: 22px 100px 23px 98px;
+  background: #f9f1e7;
+  align-items: center;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: space-between;
+}
+
+.leftside {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.pipe {
+  color: #9f9f9f;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.filterButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.dropdown {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-width: 120px;
+  padding: 4px 0;
+  margin-top: 4px;
+  list-style: none;
+}
+
+.dropdown li {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown li:hover {
+  background: #f5f5f5;
+}
+
+.leftside label {
+  font-size: 20px;
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.select {
+  background: #fff;
+  border: 1px solid #9f9f9f;
+  font-size: 20px;
+  font-weight: 400;
+  color: #9f9f9f;
+  appearance: none; /* Esconde a seta no Chrome/Safari/Edge */
+  -webkit-appearance: none; /* Esconde a seta no Safari/Chrome */
+  -moz-appearance: none; /* Esconde a seta no Firefox */
+  min-width: 55px;
+  min-height: 55px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.select:focus {
+  border: 1.5px solid #b88e2f;
+  color: #000;
+}
+
+.selectBoxButton {
+  background: #fff;
+  border: 1px solid #9f9f9f;
+  padding: 12px 32px 12px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #9f9f9f;
+  cursor: pointer;
+  min-width: 120px;
+  min-height: 48px;
+  text-align: left;
+  box-sizing: border-box;
+  transition: border 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.selectBoxButton:focus,
+.selectBoxButton.active {
+  border: 1.5px solid #b88e2f;
+  color: #000;
+}

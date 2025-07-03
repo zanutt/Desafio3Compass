@@ -1,18 +1,16 @@
 .card {
   background: #fff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  width: 260px;
-  box-shadow: 0 2px 8px #eee;
-  overflow: hidden;
+
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s;
   position: relative;
+  overflow: hidden;
+  width: 285px;
+  transition: box-shadow 0.2s;
 }
 
 .card:hover {
-  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 .badgeWrapper {
@@ -33,8 +31,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 16px;
   color: #fff;
   box-shadow: 0 2px 6px #0002;
   margin-bottom: 4px;
@@ -50,7 +47,7 @@
 
 .image {
   width: 100%;
-  height: 180px;
+  height: 301px;
   object-fit: cover;
 }
 
@@ -60,16 +57,18 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  background: #f4f5f7;
 }
 
 .name {
-  font-size: 1.2rem;
+  font-size: 24px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .alias {
   color: #888;
-  font-size: 0.95rem;
+  font-size: 16px;
 }
 
 .priceRow {
@@ -79,13 +78,68 @@
 }
 
 .price {
-  font-size: 1.1rem;
+  font-size: 20px;
   color: #222;
   font-weight: bold;
 }
 
 .priceOriginal {
-  font-size: 1rem;
+  font-size: 16px;
   color: #888;
   text-decoration: line-through;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  gap: 24px;
+}
+
+.overlayoptions {
+  display: flex;
+  gap: 20px;
+}
+
+.overlayoptions p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.seeDetailsBtn {
+  background: #fff;
+  color: #b88e2f;
+  padding: 12px 53px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.seeDetailsBtn:hover {
+  background: #222;
+  color: #fff;
 }
