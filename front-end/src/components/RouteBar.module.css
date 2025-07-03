@@ -1,0 +1,18 @@
+.routebar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 38px 0 38px 99px;
+  background: #f9f1e7;
+  margin-bottom: 35px;
+  color: #9f9f9f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.darktext {
+  color: #000;
+  font-weight: 500;
+}

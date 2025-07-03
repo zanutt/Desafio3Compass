@@ -1,0 +1,21 @@
+.cats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cats img {
+  border-radius: 15px;
+}
+
+.cats a {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--Font-Color, #333);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+}

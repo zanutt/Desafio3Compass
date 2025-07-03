@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px 100px 35px 54px;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h1 {
+  font-size: 34px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.mid_menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.right_menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
