@@ -24,6 +24,13 @@ const DROPDOWN_OPTIONS = [
   { value: "bedroom", label: "Bedroom" },
 ];
 
+const SORT_OPTIONS = [
+  { value: "random", label: "Default" },
+  { value: "new", label: "New" },
+  { value: "priceasc", label: "Ascendant" },
+  { value: "pricedsc", label: "Decrescent" },
+];
+
 const FilterBar: React.FC<FilterBarProps> = ({
   onSortChange,
   onFilterChange,
@@ -34,6 +41,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
   sortValue = "new",
   filterValue = "",
 }) => {
+  // filtro (Filter)
   const [filterOpen, setFilterOpen] = useState(false);
   const [dropdownPos, setDropdownPos] = useState<{
     top: number;
@@ -42,7 +50,16 @@ const FilterBar: React.FC<FilterBarProps> = ({
   }>({ top: 0, left: 0, width: 0 });
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  // Fecha o dropdown ao clicar fora
+  // sort By custom dropdown
+  const [sortOpen, setSortOpen] = useState(false);
+  const [sortDropdownPos, setSortDropdownPos] = useState<{
+    top: number;
+    left: number;
+    width: number;
+  }>({ top: 0, left: 0, width: 0 });
+  const sortButtonRef = useRef<HTMLButtonElement>(null);
+
+  // fecha o dropdown do filtro ao clicar fora
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -62,7 +79,27 @@ const FilterBar: React.FC<FilterBarProps> = ({
     };
   }, [filterOpen]);
 
-  // Calcula a posição do dropdown
+  // fecha o dropdown do sort ao clicar fora
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        sortButtonRef.current &&
+        !sortButtonRef.current.contains(event.target as Node)
+      ) {
+        setSortOpen(false);
+      }
+    }
+    if (sortOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [sortOpen]);
+
+  // calcula a posição do dropdown do filtro
   useEffect(() => {
     if (filterOpen && buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
@@ -74,8 +111,21 @@ const FilterBar: React.FC<FilterBarProps> = ({
     }
   }, [filterOpen]);
 
-  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    if (onSortChange) onSortChange(e.target.value);
+  // calcula a posição do dropdown do sort
+  useEffect(() => {
+    if (sortOpen && sortButtonRef.current) {
+      const rect = sortButtonRef.current.getBoundingClientRect();
+      setSortDropdownPos({
+        top: rect.bottom + window.scrollY,
+        left: rect.left + window.scrollX,
+        width: rect.width,
+      });
+    }
+  }, [sortOpen]);
+
+  const handleSortSelect = (value: string) => {
+    setSortOpen(false);
+    if (onSortChange) onSortChange(value);
   };
 
   const handleFilterSelect = (value: string) => {
@@ -83,7 +133,6 @@ const FilterBar: React.FC<FilterBarProps> = ({
     if (onFilterChange) onFilterChange(value);
   };
 
-  // Garante que os valores são números válidos
   const safeCurrentPage = Number(currentPage) || 1;
   const safePerPage = Number(perPage) || 8;
   const safeTotalResults = Number(totalResults) || 0;
@@ -92,7 +141,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
     safeTotalResults === 0 ? 0 : (safeCurrentPage - 1) * safePerPage + 1;
   const end = Math.min(safeCurrentPage * safePerPage, safeTotalResults);
 
-  // Dropdown via Portal
+  // Dropdown do filtro via Portal
   const dropdown = filterOpen
     ? ReactDOM.createPortal(
         <ul
@@ -118,10 +167,36 @@ const FilterBar: React.FC<FilterBarProps> = ({
       )
     : null;
 
+  // Dropdown do sort via Portal
+  const sortDropdown = sortOpen
+    ? ReactDOM.createPortal(
+        <ul
+          className={styles.dropdown}
+          style={{
+            position: "absolute",
+            top: sortDropdownPos.top,
+            left: sortDropdownPos.left,
+            minWidth: sortDropdownPos.width,
+            zIndex: 9999,
+          }}
+        >
+          {SORT_OPTIONS.map((opt) => (
+            <li key={opt.value} onMouseDown={() => handleSortSelect(opt.value)}>
+              {opt.label}
+            </li>
+          ))}
+        </ul>,
+        document.body
+      )
+    : null;
+
+  const sortLabel =
+    SORT_OPTIONS.find((opt) => opt.value === sortValue)?.label || "Default";
+
   return (
     <>
       <div className={styles.filterBar}>
-        <div className={styles.filterGroup}>
+        <div className={styles.leftside}>
           <button
             className={styles.filterButton}
             onClick={() => setFilterOpen((open) => !open)}
@@ -131,46 +206,50 @@ const FilterBar: React.FC<FilterBarProps> = ({
             <FilterSvg />
             Filter
           </button>
+
+          <BallsSvg />
+          <ViewList />
+          <p className={styles.pipe}>|</p>
+          <p>
+            Showing {start}-{end} of {safeTotalResults} results
+          </p>
         </div>
-        <BallsSvg />
-        <ViewList />
-        <p>|</p>
-        <p>
-          Showing {start}-{end} of {safeTotalResults} results
-        </p>
-        <div className={styles.filterGroup}>
-          <label className={styles.label} htmlFor="showprods">
-            Show:
-          </label>
-          <select
-            id="showprods"
-            className={styles.select}
-            value={safePerPage}
-            onChange={(e) => onPerPageChange?.(parseInt(e.target.value))}
-          >
-            <option value={8}>8</option>
-            <option value={16}>16</option>
-            <option value={32}>32</option>
-          </select>
-        </div>
-        <div className={styles.filterGroup}>
-          <label className={styles.label} htmlFor="sort">
-            Sort By:
-          </label>
-          <select
-            id="sort"
-            className={styles.select}
-            value={sortValue}
-            onChange={handleSortChange}
-          >
-            <option value="random">Select...</option>
-            <option value="new">New</option>
-            <option value="priceasc">Ascendant</option>
-            <option value="pricedsc">Decrescent</option>
-          </select>
+        <div className={styles.leftside}>
+          <div className={styles.selector}>
+            <label className={styles.label} htmlFor="showprods">
+              Show :
+            </label>
+            <select
+              id="showprods"
+              className={styles.select}
+              value={safePerPage}
+              onChange={(e) => onPerPageChange?.(parseInt(e.target.value))}
+            >
+              <option value={8}>8</option>
+              <option value={16}>16</option>
+              <option value={32}>32</option>
+            </select>
+          </div>
+          <div className={styles.selector}>
+            <label className={styles.label} htmlFor="sort">
+              Sort By :
+            </label>
+            <button
+              className={
+                styles.selectBoxButton + (sortOpen ? " " + styles.active : "")
+              }
+              onClick={() => setSortOpen((open) => !open)}
+              type="button"
+              ref={sortButtonRef}
+              id="sort"
+            >
+              {sortLabel}
+            </button>
+          </div>
         </div>
       </div>
       {dropdown}
+      {sortDropdown}
     </>
   );
 };
