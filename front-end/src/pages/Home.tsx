@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Banner from "../components/Banner";
 import ProductList from "../components/ProductList";
@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <div>
-      <Banner src="/assets/banner.jpg" />
+      <Banner />
       <Body />
       {products.length > 0 ? (
         <ProductList products={products} />
