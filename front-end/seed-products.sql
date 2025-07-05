@@ -43,7 +43,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"elegant","stylish","affordable"}',
     true,
-    39,
+    0,
     'This luxury mattress is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1742319096912-7bb94fdfeb03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwbHV4dXJ5JTIwbWF0dHJlc3N8ZW58MHwwfHx8MTc1MTM4NTU1OHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1654064550858-c62b971a378a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwbHV4dXJ5JTIwbWF0dHJlc3N8ZW58MHwwfHx8MTc1MTM4NTU1OHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1698517486200-e89403ea2738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwbHV4dXJ5JTIwbWF0dHJlc3N8ZW58MHwwfHx8MTc1MTM4NTU1OHww&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -112,7 +112,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"affordable","modern","minimalist","classic","durable"}',
     true,
-    33,
+    0,
     'This mirrored dresser is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1717449730054-da7a8d4140b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwbWlycm9yZWQlMjBkcmVzc2VyfGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1595515106886-43b1443a2e8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwbWlycm9yZWQlMjBkcmVzc2VyfGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1621781727259-c4bdcbd86570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwbWlycm9yZWQlMjBkcmVzc2VyfGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1637777304873-68c6edca55e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxiZWRyb29tJTIwbWlycm9yZWQlMjBkcmVzc2VyfGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -135,7 +135,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"minimalist","durable","elegant","contemporary"}',
     true,
-    60,
+    0,
     'This pendant light is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1621215052063-6ed29c948b31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwcGVuZGFudCUyMGxpZ2h0fGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1649024517884-a161b75fa15a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwcGVuZGFudCUyMGxpZ2h0fGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1489630114164-dbd774c5a337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwcGVuZGFudCUyMGxpZ2h0fGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1581309700026-48b494fd8c47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxiZWRyb29tJTIwcGVuZGFudCUyMGxpZ2h0fGVufDB8MHx8fDE3NTEzODU1NjB8MA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -250,7 +250,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"modern","contemporary","affordable","comfortable"}',
     true,
-    43,
+    0,
     'This wardrobe is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1573311392049-4186e3a47e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwd2FyZHJvYmV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1631048834949-85e003d913c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwd2FyZHJvYmV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1630699375019-c334927264df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwd2FyZHJvYmV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1630699293259-0b6c08606c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxiZWRyb29tJTIwd2FyZHJvYmV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1631048499455-4f9e26f23b9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw1fHxiZWRyb29tJTIwd2FyZHJvYmV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -273,7 +273,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"affordable","durable","luxury","elegant","stylish"}',
     true,
-    66,
+    0,
     'This vanity table is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1652190455129-6d97f8d7a75b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwdmFuaXR5JTIwdGFibGV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1669247164834-2f09bc4ed72b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwdmFuaXR5JTIwdGFibGV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1669247164859-5f6d1baf9f33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwdmFuaXR5JTIwdGFibGV8ZW58MHwwfHx8MTc1MTM4NTU2NHww&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -342,7 +342,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"durable","affordable"}',
     true,
-    10,
+    0,
     'This throw blanket is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1724166591876-837f21036ef6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwdGhyb3clMjBibGFua2V0fGVufDB8MHx8fDE3NTEzODU1NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1696987026455-c2c7555ca10f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwdGhyb3clMjBibGFua2V0fGVufDB8MHx8fDE3NTEzODU1NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1727706572437-4fcda0cbd66f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwdGhyb3clMjBibGFua2V0fGVufDB8MHx8fDE3NTEzODU1NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1604864850415-6bded3e6d452?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxiZWRyb29tJTIwdGhyb3clMjBibGFua2V0fGVufDB8MHx8fDE3NTEzODU1NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1664458595373-1583c0e3ea1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw1fHxiZWRyb29tJTIwdGhyb3clMjBibGFua2V0fGVufDB8MHx8fDE3NTEzODU1NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -503,7 +503,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"elegant","affordable","comfortable","luxury"}',
     true,
-    5,
+    0,
     'This bedding set is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1642731797384-71b6eff18102?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwYmVkZGluZyUyMHNldHxlbnwwfDB8fHwxNzUxMzg1NTcxfDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1606796913825-2b02883605e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwYmVkZGluZyUyMHNldHxlbnwwfDB8fHwxNzUxMzg1NTcxfDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1743748978909-169017ab0720?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwYmVkZGluZyUyMHNldHxlbnwwfDB8fHwxNzUxMzg1NTcxfDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1623111771662-43bc41429d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxiZWRyb29tJTIwYmVkZGluZyUyMHNldHxlbnwwfDB8fHwxNzUxMzg1NTcxfDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1571508602699-6cddb34f8649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw1fHxiZWRyb29tJTIwYmVkZGluZyUyMHNldHxlbnwwfDB8fHwxNzUxMzg1NTcxfDA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -664,7 +664,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"modern","affordable","stylish","classic"}',
     true,
-    37,
+    0,
     'This decorative pillow is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1628842456894-d1fd298f2c3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwZGVjb3JhdGl2ZSUyMHBpbGxvd3xlbnwwfDB8fHwxNzUxMzg1NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1722605914661-54c3992fe26c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwZGVjb3JhdGl2ZSUyMHBpbGxvd3xlbnwwfDB8fHwxNzUxMzg1NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1623175788405-46d2c0356c12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwZGVjb3JhdGl2ZSUyMHBpbGxvd3xlbnwwfDB8fHwxNzUxMzg1NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1606796913825-2b02883605e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxiZWRyb29tJTIwZGVjb3JhdGl2ZSUyMHBpbGxvd3xlbnwwfDB8fHwxNzUxMzg1NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -779,7 +779,7 @@ INSERT INTO product (
     '{"Bedroom"}',
     '{"elegant","contemporary"}',
     true,
-    20,
+    0,
     'This bed canopy is perfect for your bedroom. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1670896420405-23aa2b4df422?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwYmVkJTIwY2Fub3B5fGVufDB8MHx8fDE3NTEzODU1Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1724582586413-6b69e1c94a17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxiZWRyb29tJTIwYmVkJTIwY2Fub3B5fGVufDB8MHx8fDE3NTEzODU1Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1721308898368-befe6431b5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwYmVkJTIwY2Fub3B5fGVufDB8MHx8fDE3NTEzODU1Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -895,7 +895,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"classic","stylish"}',
     true,
-    21,
+    0,
     'This floor lamp is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1678705387084-9593dc56ade5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxsaXZpbmclMjByb29tJTIwZmxvb3IlMjBsYW1wfGVufDB8MHx8fDE3NTEzODU1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1730989427568-0a6fdb5a2fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxsaXZpbmclMjByb29tJTIwZmxvb3IlMjBsYW1wfGVufDB8MHx8fDE3NTEzODU1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1663174729156-1d2641bf83d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxsaXZpbmclMjByb29tJTIwZmxvb3IlMjBsYW1wfGVufDB8MHx8fDE3NTEzODU1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1560448204-603b3fc33ddc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxsaXZpbmclMjByb29tJTIwZmxvb3IlMjBsYW1wfGVufDB8MHx8fDE3NTEzODU1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -1033,7 +1033,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"luxury","stylish","minimalist","elegant"}',
     true,
-    18,
+    0,
     'This entertainment unit is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1733119454399-bfb2155de998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxsaXZpbmclMjByb29tJTIwZW50ZXJ0YWlubWVudCUyMHVuaXR8ZW58MHwwfHx8MTc1MTM4NTU4Nnww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1734942607050-6aa79f02a9d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxsaXZpbmclMjByb29tJTIwZW50ZXJ0YWlubWVudCUyMHVuaXR8ZW58MHwwfHx8MTc1MTM4NTU4Nnww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1733811073382-95d5b79c4cf1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxsaXZpbmclMjByb29tJTIwZW50ZXJ0YWlubWVudCUyMHVuaXR8ZW58MHwwfHx8MTc1MTM4NTU4Nnww&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -1148,7 +1148,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"comfortable","minimalist","stylish"}',
     true,
-    35,
+    0,
     'This ottoman is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1560448204-603b3fc33ddc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxsaXZpbmclMjByb29tJTIwb3R0b21hbnxlbnwwfDB8fHwxNzUxMzg1NTg5fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1560449752-8b6023e2ab5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxsaXZpbmclMjByb29tJTIwb3R0b21hbnxlbnwwfDB8fHwxNzUxMzg1NTg5fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1727645710175-aa1dc3449e40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxsaXZpbmclMjByb29tJTIwb3R0b21hbnxlbnwwfDB8fHwxNzUxMzg1NTg5fDA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -1217,7 +1217,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"classic","minimalist","luxury"}',
     true,
-    20,
+    0,
     'This floor cushions is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=living%20room%20floor%20cushions+1","https://placehold.co/800x600/cccccc/333333?text=living%20room%20floor%20cushions+2","https://placehold.co/800x600/cccccc/333333?text=living%20room%20floor%20cushions+3","https://placehold.co/800x600/cccccc/333333?text=living%20room%20floor%20cushions+4","https://placehold.co/800x600/cccccc/333333?text=living%20room%20floor%20cushions+5"}'
@@ -1355,7 +1355,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"modern","classic"}',
     true,
-    50,
+    0,
     'This magazine rack is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=living%20room%20magazine%20rack+1","https://placehold.co/800x600/cccccc/333333?text=living%20room%20magazine%20rack+2","https://placehold.co/800x600/cccccc/333333?text=living%20room%20magazine%20rack+3","https://placehold.co/800x600/cccccc/333333?text=living%20room%20magazine%20rack+4"}'
@@ -1378,7 +1378,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"durable","affordable","minimalist","luxury"}',
     true,
-    29,
+    0,
     'This fireplace screen is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=living%20room%20fireplace%20screen+1","https://placehold.co/800x600/cccccc/333333?text=living%20room%20fireplace%20screen+2","https://placehold.co/800x600/cccccc/333333?text=living%20room%20fireplace%20screen+3","https://placehold.co/800x600/cccccc/333333?text=living%20room%20fireplace%20screen+4","https://placehold.co/800x600/cccccc/333333?text=living%20room%20fireplace%20screen+5"}'
@@ -1493,7 +1493,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"durable","modern","elegant"}',
     true,
-    6,
+    0,
     'This ceiling light is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=living%20room%20ceiling%20light+1","https://placehold.co/800x600/cccccc/333333?text=living%20room%20ceiling%20light+2","https://placehold.co/800x600/cccccc/333333?text=living%20room%20ceiling%20light+3"}'
@@ -1516,7 +1516,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"elegant","affordable"}',
     true,
-    31,
+    0,
     'This storage ottoman is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=living%20room%20storage%20ottoman+1","https://placehold.co/800x600/cccccc/333333?text=living%20room%20storage%20ottoman+2","https://placehold.co/800x600/cccccc/333333?text=living%20room%20storage%20ottoman+3","https://placehold.co/800x600/cccccc/333333?text=living%20room%20storage%20ottoman+4","https://placehold.co/800x600/cccccc/333333?text=living%20room%20storage%20ottoman+5"}'
@@ -1585,7 +1585,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"affordable","durable","classic","luxury"}',
     true,
-    33,
+    0,
     'This bar cart is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=living%20room%20bar%20cart+1","https://placehold.co/800x600/cccccc/333333?text=living%20room%20bar%20cart+2","https://placehold.co/800x600/cccccc/333333?text=living%20room%20bar%20cart+3"}'
@@ -1608,7 +1608,7 @@ INSERT INTO product (
     '{"Living Room"}',
     '{"comfortable","durable"}',
     true,
-    61,
+    0,
     'This accent mirror is perfect for your living room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=living%20room%20accent%20mirror+1","https://placehold.co/800x600/cccccc/333333?text=living%20room%20accent%20mirror+2","https://placehold.co/800x600/cccccc/333333?text=living%20room%20accent%20mirror+3","https://placehold.co/800x600/cccccc/333333?text=living%20room%20accent%20mirror+4","https://placehold.co/800x600/cccccc/333333?text=living%20room%20accent%20mirror+5"}'
@@ -1632,7 +1632,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"elegant","modern","minimalist"}',
     true,
-    56,
+    0,
     'This dining table is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=dining%20room%20dining%20table+1","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20dining%20table+2","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20dining%20table+3","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20dining%20table+4"}'
@@ -1678,7 +1678,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"modern","classic","luxury","elegant"}',
     true,
-    8,
+    0,
     'This china cabinet is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=dining%20room%20china%20cabinet+1","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20china%20cabinet+2","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20china%20cabinet+3","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20china%20cabinet+4"}'
@@ -1701,7 +1701,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"durable","luxury","elegant","minimalist"}',
     true,
-    43,
+    0,
     'This chandelier is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://placehold.co/800x600/cccccc/333333?text=dining%20room%20chandelier+1","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20chandelier+2","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20chandelier+3","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20chandelier+4","https://placehold.co/800x600/cccccc/333333?text=dining%20room%20chandelier+5"}'
@@ -1839,7 +1839,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"durable","contemporary","modern","minimalist"}',
     true,
-    5,
+    0,
     'This wine rack is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1701608246860-252f39579979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwd2luZSUyMHJhY2t8ZW58MHwwfHx8MTc1MTM4NTYwMnww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1738544475560-e97924c92333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tJTIwd2luZSUyMHJhY2t8ZW58MHwwfHx8MTc1MTM4NTYwMnww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1664839553733-59487c082cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxkaW5pbmclMjByb29tJTIwd2luZSUyMHJhY2t8ZW58MHwwfHx8MTc1MTM4NTYwMnww&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -1862,7 +1862,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"affordable","durable","elegant","luxury","minimalist"}',
     true,
-    26,
+    0,
     'This serving tray is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1626201853398-7cba6a8ebd7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwc2VydmluZyUyMHRyYXl8ZW58MHwwfHx8MTc1MTM4NTYwM3ww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1733222013509-2eac30864e10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tJTIwc2VydmluZyUyMHRyYXl8ZW58MHwwfHx8MTc1MTM4NTYwM3ww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1654378556718-e3d98a26f63a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxkaW5pbmclMjByb29tJTIwc2VydmluZyUyMHRyYXl8ZW58MHwwfHx8MTc1MTM4NTYwM3ww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1677129665421-c87a194338ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxkaW5pbmclMjByb29tJTIwc2VydmluZyUyMHRyYXl8ZW58MHwwfHx8MTc1MTM4NTYwM3ww&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1598300064133-4bb9ae3123c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw1fHxkaW5pbmclMjByb29tJTIwc2VydmluZyUyMHRyYXl8ZW58MHwwfHx8MTc1MTM4NTYwM3ww&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -1931,7 +1931,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"modern","contemporary","classic"}',
     true,
-    12,
+    0,
     'This dining set is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1732557377011-b822ddc13649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwZGluaW5nJTIwc2V0fGVufDB8MHx8fDE3NTEzODU2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1673081752959-addbc864f678?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tJTIwZGluaW5nJTIwc2V0fGVufDB8MHx8fDE3NTEzODU2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1569857930183-be35a91f94fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxkaW5pbmclMjByb29tJTIwZGluaW5nJTIwc2V0fGVufDB8MHx8fDE3NTEzODU2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -2069,7 +2069,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"minimalist","elegant","affordable"}',
     true,
-    41,
+    0,
     'This candle holders is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1668936073458-6d670ac042b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwY2FuZGxlJTIwaG9sZGVyc3xlbnwwfDB8fHwxNzUxMzg1NjA5fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1641544014231-2e0080672af7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tJTIwY2FuZGxlJTIwaG9sZGVyc3xlbnwwfDB8fHwxNzUxMzg1NjA5fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1648323212273-3991e28ed566?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxkaW5pbmclMjByb29tJTIwY2FuZGxlJTIwaG9sZGVyc3xlbnwwfDB8fHwxNzUxMzg1NjA5fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1701987408670-a85cc71b1823?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxkaW5pbmclMjByb29tJTIwY2FuZGxlJTIwaG9sZGVyc3xlbnwwfDB8fHwxNzUxMzg1NjA5fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1599709729019-c27b3cfe4ad9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw1fHxkaW5pbmclMjByb29tJTIwY2FuZGxlJTIwaG9sZGVyc3xlbnwwfDB8fHwxNzUxMzg1NjA5fDA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -2230,7 +2230,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"luxury","modern","elegant","affordable"}',
     true,
-    15,
+    0,
     'This chair cushions is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1729470813402-e342d8cba414?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwY2hhaXIlMjBjdXNoaW9uc3xlbnwwfDB8fHwxNzUxMzg1NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1558898434-af897d9ac0a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tJTIwY2hhaXIlMjBjdXNoaW9uc3xlbnwwfDB8fHwxNzUxMzg1NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1649455767691-49c834dd3f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxkaW5pbmclMjByb29tJTIwY2hhaXIlMjBjdXNoaW9uc3xlbnwwfDB8fHwxNzUxMzg1NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -2322,7 +2322,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"luxury","classic","comfortable","durable"}',
     true,
-    66,
+    0,
     'This salt and pepper is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1635492357438-66d3e442eabf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwc2FsdCUyMGFuZCUyMHBlcHBlcnxlbnwwfDB8fHwxNzUxMzg1NjE3fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1609858386327-e2cc02007719?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tJTIwc2FsdCUyMGFuZCUyMHBlcHBlcnxlbnwwfDB8fHwxNzUxMzg1NjE3fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1739595415308-ba632ebfbfe2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxkaW5pbmclMjByb29tJTIwc2FsdCUyMGFuZCUyMHBlcHBlcnxlbnwwfDB8fHwxNzUxMzg1NjE3fDA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1611398989422-1d2ff8f3987e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHw0fHxkaW5pbmclMjByb29tJTIwc2FsdCUyMGFuZCUyMHBlcHBlcnxlbnwwfDB8fHwxNzUxMzg1NjE3fDA&ixlib=rb-4.1.0&q=80&w=1080"}'
@@ -2345,7 +2345,7 @@ INSERT INTO product (
     '{"Dining Room"}',
     '{"contemporary","affordable","elegant","durable"}',
     true,
-    70,
+    0,
     'This dining mirror is perfect for your dining room. Crafted with attention to detail and designed for both style and functionality. Made from high-quality materials that ensure durability and long-lasting beauty.',
     'Dimensions and specifications vary by model. Please check product details for specific measurements. Assembly may be required. Warranty included.',
     '{"https://images.unsplash.com/photo-1750105244320-d93c6c324743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwxfHxkaW5pbmclMjByb29tJTIwZGluaW5nJTIwbWlycm9yfGVufDB8MHx8fDE3NTEzODU2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1745514306378-cbb9eaa3a3ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tJTIwZGluaW5nJTIwbWlycm9yfGVufDB8MHx8fDE3NTEzODU2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080","https://images.unsplash.com/photo-1599971284461-116b5f67e757?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NzE4NTh8MHwxfHNlYXJjaHwzfHxkaW5pbmclMjByb29tJTIwZGluaW5nJTIwbWlycm9yfGVufDB8MHx8fDE3NTEzODU2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080"}'
