@@ -9,6 +9,7 @@ front-end\node_modules
 front-end\dist
 front-end/dist
 \node_modules
+infra/.data
 
 # Logs
 logs
