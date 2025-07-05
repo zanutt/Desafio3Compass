@@ -4,9 +4,9 @@ export interface Product {
   alias: string;
   price: number;
   descount: number;
-  image?: string[] | string;
+  image?: string[] | string | undefined;
   new: boolean;
-  review?: number;
+  review?: number | undefined;
   customreviews?: number;
   info?: string;
   smalldescription?: string;
