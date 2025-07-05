@@ -59,9 +59,15 @@ export class ProductService {
     }
 
     if (sort === 'priceasc') {
-      query = query.orderBy('product.price', 'ASC');
+      query = query.orderBy(
+        'product.price * (1 - COALESCE(product.descount, 0) / 100.0)',
+        'ASC',
+      );
     } else if (sort === 'pricedsc') {
-      query = query.orderBy('product.price', 'DESC');
+      query = query.orderBy(
+        'product.price * (1 - COALESCE(product.descount, 0) / 100.0)',
+        'DESC',
+      );
     } else if (sort === 'new') {
       if (filter) {
         query = query.andWhere('product.new = :isNew', { isNew: true });
