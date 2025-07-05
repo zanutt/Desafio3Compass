@@ -25,6 +25,7 @@ export class ProductService {
       )
       .skip(skip)
       .take(count)
+      .orderBy('RANDOM()')
       .getManyAndCount()
       .then(([products, total]) => {
         return {
