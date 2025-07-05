@@ -107,6 +107,19 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.reviewstar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.pipe {
+  font-size: 25px;
 }
 
 .related {

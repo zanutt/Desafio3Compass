@@ -8,6 +8,7 @@ import FbSvg from "./FbSvg";
 import LinkedinSvg from "./LinkedinSvg";
 import XSvg from "./XSvg";
 import RouteBar from "./RouteBar";
+import StarRating from "./StarRating";
 
 const SingleProduct: React.FC = () => {
   const { alias } = useParams<{ alias: string }>();
@@ -111,6 +112,13 @@ const SingleProduct: React.FC = () => {
     setQuantity((q) => Math.max(1, q + delta));
   };
 
+  // para o ts parar de reclamar
+  const images = !product.image
+    ? []
+    : Array.isArray(product.image)
+      ? product.image
+      : [product.image];
+
   return (
     <>
       <RouteBar productname={product.name} />
@@ -125,7 +133,7 @@ const SingleProduct: React.FC = () => {
                 className={styles.mainImg}
               />
               <div className={styles.thumbs}>
-                {(product.image || []).map((img: string, i: number) => (
+                {images.map((img: string, i: number) => (
                   <img
                     key={i}
                     src={img}
@@ -149,13 +157,14 @@ const SingleProduct: React.FC = () => {
               )}
             </div>
 
-            {/* necessita refino */}
             <div className={styles.reviews}>
-              <span>
-                ⭐ {product.review} | ({product.customreviews ?? 0} reviews)
-              </span>
+              <StarRating rating={product.review ?? 0} />
+              <div className={styles.reviewstar}>
+                <p>{(product.review ?? 0).toFixed(1)}</p>{" "}
+                <p className={styles.pipe}>|</p>
+                <p>{product.customreviews ?? 0} Customer Review</p>
+              </div>
             </div>
-
             <div className={styles.smalldescription}>
               {product.smalldescription}
             </div>

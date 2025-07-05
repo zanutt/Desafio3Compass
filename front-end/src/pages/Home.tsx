@@ -17,7 +17,7 @@ const Home = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:3000/product/all?page=1"
+          "http://localhost:3000/product/all?page=1&sort=random"
         );
         setProducts(response.data.products);
         setError(null);
